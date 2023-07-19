@@ -1,5 +1,18 @@
 $mainTextColor: #2f1c6a;
 
+@mixin buttonContent {
+  all: unset;
+  background-color: rgb(103, 61, 230);
+  color: white;
+  width: 300px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  padding: 16px 0 16px;
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   font-family: "DM Sans", sans-serif;
@@ -42,26 +55,77 @@ body {
     max-width: 68%;
     text-align: center;
   }
+
   .price {
     color: $mainTextColor;
-    margin: 0;
-    padding: 0;
+    padding-bottom: 16px;
+
     .numbers {
       font-size: 36px;
       font-weight: 700;
     }
-
     .euro {
       font-size: 20px;
     }
   }
 
+  .free {
+    color: $mainTextColor;
+    font-weight: 800;
+    font-size: 18px;
+    margin: 0;
+  }
+
   .time {
     display: flex;
+    margin: 16px 0 24px 0;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $mainTextColor;
+      height: 64px;
+      width: 64px;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 24px;
+      color: $mainTextColor;
+    }
+    span {
+      color: $mainTextColor;
+      margin: 16px 4px 0;
+      font-size: 18px;
+    }
+  }
+
+  button {
+    @include buttonContent();
+  }
+
+  .moneyBack {
+    color: $mainTextColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 16px;
   }
 
   img {
     width: 500px;
     height: 300px;
+  }
+}
+
+.ratingWraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .trustpilot {
+    img {
+      width: 60px;
+      height: 60px;
+    }
   }
 }

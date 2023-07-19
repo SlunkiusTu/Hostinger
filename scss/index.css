@@ -42,8 +42,7 @@ body {
 }
 .mainWraper .price {
   color: #2f1c6a;
-  margin: 0;
-  padding: 0;
+  padding-bottom: 16px;
 }
 .mainWraper .price .numbers {
   font-size: 36px;
@@ -52,10 +51,64 @@ body {
 .mainWraper .price .euro {
   font-size: 20px;
 }
+.mainWraper .free {
+  color: #2f1c6a;
+  font-weight: 800;
+  font-size: 18px;
+  margin: 0;
+}
 .mainWraper .time {
   display: flex;
+  margin: 16px 0 24px 0;
+}
+.mainWraper .time div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2f1c6a;
+  height: 64px;
+  width: 64px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #2f1c6a;
+}
+.mainWraper .time span {
+  color: #2f1c6a;
+  margin: 16px 4px 0;
+  font-size: 18px;
+}
+.mainWraper button {
+  all: unset;
+  background-color: rgb(103, 61, 230);
+  color: white;
+  width: 300px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  padding: 16px 0 16px;
+  cursor: pointer;
+}
+.mainWraper .moneyBack {
+  color: #2f1c6a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 .mainWraper img {
   width: 500px;
   height: 300px;
+}
+
+.ratingWraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ratingWraper .trustpilot img {
+  width: 60px;
+  height: 60px;
 }/*# sourceMappingURL=index.css.map */
