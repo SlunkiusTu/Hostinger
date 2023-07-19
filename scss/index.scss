@@ -1,5 +1,11 @@
 $mainTextColor: #2f1c6a;
 
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin buttonContent {
   all: unset;
   background-color: rgb(103, 61, 230);
@@ -34,10 +40,9 @@ body {
 }
 
 .mainWraper {
-  display: flex;
+  @include flexCenter();
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   h1 {
     color: $mainTextColor;
     font-size: 24px;
@@ -81,9 +86,7 @@ body {
     margin: 16px 0 24px 0;
 
     div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexCenter();
       border: 1px solid $mainTextColor;
       height: 64px;
       width: 64px;
@@ -105,9 +108,7 @@ body {
 
   .moneyBack {
     color: $mainTextColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
     font-weight: 500;
     margin-bottom: 16px;
   }
@@ -119,13 +120,67 @@ body {
 }
 
 .ratingWraper {
+  @include flexCenter();
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+
   .trustpilot {
+    display: flex;
+    flex-direction: column;
+
     img {
-      width: 60px;
-      height: 60px;
+      width: 255px;
+      height: 100px;
+      margin-bottom: 8px;
+      margin-top: 100px;
     }
+
+    .reviews::before {
+      content: "|";
+      margin: 0 6px 0 2px;
+      font-weight: 200;
+    }
+  }
+
+  // google rating
+
+  .google {
+    .googleRating {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+    }
+
+    .googleImg {
+      width: 80px;
+      object-fit: contain;
+      margin-top: 30px;
+    }
+
+    .fiveStars {
+      width: 200px;
+      height: 40px;
+      object-fit: contain;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .review::before {
+      content: "|";
+      margin: 0 6px 0 2px;
+      font-weight: 200;
+    }
+  }
+
+  h2 {
+    color: $mainTextColor;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  p {
+    color: $mainTextColor;
+    max-width: 70%;
+    text-align: center;
+    font-weight: 500;
   }
 }
