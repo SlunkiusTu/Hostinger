@@ -16,4 +16,46 @@ body {
   height: 30px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.mainWraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainWraper h1 {
+  color: #2f1c6a;
+  font-size: 24px;
+  font-weight: 800;
+  max-width: 65%;
+  text-align: center;
+  margin: 0;
+}
+.mainWraper .describe {
+  color: #2f1c6a;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  max-width: 68%;
+  text-align: center;
+}
+.mainWraper .price {
+  color: #2f1c6a;
+  margin: 0;
+  padding: 0;
+}
+.mainWraper .price .numbers {
+  font-size: 36px;
+  font-weight: 700;
+}
+.mainWraper .price .euro {
+  font-size: 20px;
+}
+.mainWraper .time {
+  display: flex;
+}
+.mainWraper img {
+  width: 500px;
+  height: 300px;
 }/*# sourceMappingURL=index.css.map */
