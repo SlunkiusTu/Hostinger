@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+.headerWraper {
+  padding: 10px 16px;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 147px;
+      height: 30px;
+      object-fit: cover;
+    }
+  }
+}
