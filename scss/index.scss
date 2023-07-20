@@ -445,13 +445,15 @@ body {
     .discountContent {
       padding: 0;
       padding: 40px 24px 0;
+      width: 680px;
+      height: 440px;
       .savings {
         display: flex;
         flex-direction: row;
 
         .bestDeal {
           padding: 0;
-          padding: 30px;
+          padding-right: 24px;
 
           border-right: 1px solid #dadce0;
           h3 {
@@ -460,10 +462,47 @@ body {
             max-width: 90%;
             margin-bottom: 30px;
           }
-          p {
+          .numbers {
+            font-size: 40px;
           }
+        }
+        .special {
+          padding-left: 23px;
+          justify-content: center;
+        }
+      }
+      .closeContainer {
+        .close {
+          padding: 0;
+          padding: 20px;
         }
       }
     }
   }
+  .conditions {
+    margin-bottom: 80px;
+  }
+
+  .toolsWraper {
+    h2 {
+      font-size: 28px;
+      max-width: 70%;
+    }
+    p {
+      margin-bottom: 40px;
+    }
+    select {
+      margin-bottom: 40px;
+    }
+  }
+
+  .aiWraper {
+    img {
+      width: 680px;
+      height: 500px;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
 }

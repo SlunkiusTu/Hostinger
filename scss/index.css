@@ -414,6 +414,8 @@ body {
   .discount .discountContent {
     padding: 0;
     padding: 40px 24px 0;
+    width: 680px;
+    height: 440px;
   }
   .discount .discountContent .savings {
     display: flex;
@@ -421,7 +423,7 @@ body {
   }
   .discount .discountContent .savings .bestDeal {
     padding: 0;
-    padding: 30px;
+    padding-right: 24px;
     border-right: 1px solid #dadce0;
   }
   .discount .discountContent .savings .bestDeal h3 {
@@ -429,5 +431,33 @@ body {
     font-size: 20px;
     max-width: 90%;
     margin-bottom: 30px;
+  }
+  .discount .discountContent .savings .bestDeal .numbers {
+    font-size: 40px;
+  }
+  .discount .discountContent .savings .special {
+    padding-left: 23px;
+    justify-content: center;
+  }
+  .discount .discountContent .closeContainer .close {
+    padding: 0;
+    padding: 20px;
+  }
+  .conditions {
+    margin-bottom: 80px;
+  }
+  .toolsWraper h2 {
+    font-size: 28px;
+    max-width: 70%;
+  }
+  .toolsWraper p {
+    margin-bottom: 40px;
+  }
+  .toolsWraper select {
+    margin-bottom: 40px;
+  }
+  .aiWraper img {
+    width: 680px;
+    height: 500px;
   }
 }/*# sourceMappingURL=index.css.map */
