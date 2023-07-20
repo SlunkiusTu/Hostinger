@@ -3,19 +3,66 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
-.headerWraper {
-  padding: 10px 16px;
-}
 .headerWraper header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.headerWraper header img {
-  width: 147px;
-  height: 30px;
+.headerWraper header .logo {
+  width: 160px;
+  height: 40px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.headerWraper header .flag {
+  width: 32px;
+  height: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.headerWraper header .headerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.headerWraper header .headerLogo p {
+  font-weight: 600;
+}
+.headerWraper header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 25px;
+}
+.headerWraper header select {
+  border: none;
+  font-size: 16px;
+}
+.headerWraper header select:hover {
+  opacity: 0.7;
+}
+.headerWraper header a {
+  text-decoration: none;
+  color: #1d1e20;
+  font-weight: 500;
+}
+.headerWraper header a:hover {
+  opacity: 0.7;
+}
+.headerWraper header button {
+  all: unset;
+  border: 2px solid #1d1e20;
+  color: #1d1e20;
+  border-radius: 4px;
+  padding: 12px 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.headerWraper header button:hover {
+  border: 2px solid #1d1e20;
+  opacity: 0.7;
 }
 
 .mainWraper {
@@ -382,7 +429,69 @@ body {
   height: 350px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1025px) {
+  .headerWraper {
+    padding: 10px 35px;
+  }
+  .headerWraper header svg {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headerWraper header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .headerWraper header .logo {
+    width: 160px;
+    height: 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .headerWraper header .flag {
+    display: none;
+  }
+  .headerWraper header .headerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .headerWraper header .headerLogo p {
+    display: none;
+  }
+  .headerWraper header ul {
+    display: none;
+  }
+  .headerWraper header select {
+    border: none;
+    font-size: 16px;
+  }
+  .headerWraper header select:hover {
+    opacity: 0.7;
+  }
+  .headerWraper header a {
+    text-decoration: none;
+    color: #1d1e20;
+    font-weight: 500;
+  }
+  .headerWraper header a:hover {
+    opacity: 0.7;
+  }
+  .headerWraper header button {
+    all: unset;
+    border: 2px solid #1d1e20;
+    color: #1d1e20;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .headerWraper header button:hover {
+    border: 2px solid #1d1e20;
+    opacity: 0.7;
+  }
   .mainWraper {
     margin-bottom: 40px;
     padding: 40px 24px 0;
