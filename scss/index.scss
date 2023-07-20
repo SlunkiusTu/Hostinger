@@ -196,7 +196,22 @@ body {
     border: 1px solid #d5dfff;
     border-radius: 4px;
     min-width: 470px;
-    padding: 10px 20px 20px 20px;
+    padding: 10px;
+
+    .closeContainer {
+      @include flexCenter();
+      max-width: 100%;
+      .close {
+        all: unset;
+        @include flexCenter();
+        gap: 4px;
+        cursor: pointer;
+        color: #673de6;
+        font-weight: 700;
+        padding: 10px 0 10px;
+        width: 68%;
+      }
+    }
   }
 
   h3 {
@@ -208,6 +223,8 @@ body {
   .savings {
     .bestDeal {
       text-align: center;
+      padding: 0px 10px;
+      border-bottom: 1px solid #d5dfff;
 
       .euroLine {
         color: #727586;
@@ -270,6 +287,7 @@ body {
       display: flex;
       flex-direction: column;
       color: $mainTextColor;
+      border-bottom: 1px solid #d5dfff;
 
       div {
         display: flex;
@@ -308,10 +326,6 @@ body {
     color: #673de6;
     font-weight: 700;
     padding: 10px 0 10px;
-    width: 68%;
-    border-bottom: 1px solid #d5dfff;
-    border-left: 1px solid #d5dfff;
-    border-right: 1px solid #d5dfff;
   }
 }
 
@@ -392,5 +406,64 @@ body {
   img {
     width: 500px;
     height: 350px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mainWraper {
+    margin-bottom: 40px;
+    padding: 40px 24px 0;
+    h1 {
+      font-size: 28px;
+      min-width: 80%;
+    }
+    .describe {
+      min-width: 73%;
+    }
+
+    .price {
+      .numbers {
+        font-size: 40px;
+      }
+    }
+    img {
+      width: 680px;
+      height: 450px;
+    }
+  }
+  .ratingWraper {
+    .rating {
+      @include flexCenter();
+      justify-content: space-evenly;
+      width: 100%;
+    }
+    h2 {
+      font-size: 28px;
+    }
+  }
+  .discount {
+    .discountContent {
+      padding: 0;
+      padding: 40px 24px 0;
+      .savings {
+        display: flex;
+        flex-direction: row;
+
+        .bestDeal {
+          padding: 0;
+          padding: 30px;
+
+          border-right: 1px solid #dadce0;
+          h3 {
+            margin: 0;
+            font-size: 20px;
+            max-width: 90%;
+            margin-bottom: 30px;
+          }
+          p {
+          }
+        }
+      }
+    }
   }
 }

@@ -172,7 +172,25 @@ body {
   border: 1px solid #d5dfff;
   border-radius: 4px;
   min-width: 470px;
-  padding: 10px 20px 20px 20px;
+  padding: 10px;
+}
+.discount .discountContent .closeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.discount .discountContent .closeContainer .close {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  color: #673de6;
+  font-weight: 700;
+  padding: 10px 0 10px;
+  width: 68%;
 }
 .discount h3 {
   text-align: center;
@@ -181,6 +199,8 @@ body {
 }
 .discount .savings .bestDeal {
   text-align: center;
+  padding: 0px 10px;
+  border-bottom: 1px solid #d5dfff;
 }
 .discount .savings .bestDeal .euroLine {
   color: #727586;
@@ -243,6 +263,7 @@ body {
   display: flex;
   flex-direction: column;
   color: #2f1c6a;
+  border-bottom: 1px solid #d5dfff;
 }
 .discount .savings .special div {
   display: flex;
@@ -279,10 +300,6 @@ body {
   color: #673de6;
   font-weight: 700;
   padding: 10px 0 10px;
-  width: 68%;
-  border-bottom: 1px solid #d5dfff;
-  border-left: 1px solid #d5dfff;
-  border-right: 1px solid #d5dfff;
 }
 
 .toolsWraper {
@@ -363,4 +380,54 @@ body {
 .aiWraper img {
   width: 500px;
   height: 350px;
+}
+
+@media screen and (min-width: 768px) {
+  .mainWraper {
+    margin-bottom: 40px;
+    padding: 40px 24px 0;
+  }
+  .mainWraper h1 {
+    font-size: 28px;
+    min-width: 80%;
+  }
+  .mainWraper .describe {
+    min-width: 73%;
+  }
+  .mainWraper .price .numbers {
+    font-size: 40px;
+  }
+  .mainWraper img {
+    width: 680px;
+    height: 450px;
+  }
+  .ratingWraper .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .ratingWraper h2 {
+    font-size: 28px;
+  }
+  .discount .discountContent {
+    padding: 0;
+    padding: 40px 24px 0;
+  }
+  .discount .discountContent .savings {
+    display: flex;
+    flex-direction: row;
+  }
+  .discount .discountContent .savings .bestDeal {
+    padding: 0;
+    padding: 30px;
+    border-right: 1px solid #dadce0;
+  }
+  .discount .discountContent .savings .bestDeal h3 {
+    margin: 0;
+    font-size: 20px;
+    max-width: 90%;
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=index.css.map */
