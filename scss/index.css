@@ -82,13 +82,14 @@ body {
   all: unset;
   background-color: rgb(103, 61, 230);
   color: white;
-  width: 300px;
+  width: 260px;
   text-align: center;
   font-size: 16px;
   border-radius: 4px;
   font-weight: 700;
   padding: 16px 0 16px;
   cursor: pointer;
+  width: 300px;
 }
 .mainWraper .moneyBack {
   color: #2f1c6a;
@@ -222,7 +223,7 @@ body {
   all: unset;
   background-color: rgb(103, 61, 230);
   color: white;
-  width: 300px;
+  width: 260px;
   text-align: center;
   font-size: 16px;
   border-radius: 4px;
@@ -264,4 +265,83 @@ body {
   cursor: pointer;
   text-align: center;
   margin-top: 40px;
+}
+
+.toolsWraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.toolsWraper h2 {
+  color: #2f1c6a;
+  text-align: center;
+  max-width: 80%;
+  font-size: 25px;
+}
+.toolsWraper p {
+  color: #2f1c6a;
+  text-align: center;
+  max-width: 69%;
+  font-weight: 400;
+}
+.toolsWraper select {
+  width: 70%;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  padding: 13px 16px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.toolsWraper select:hover {
+  border: none;
+  border: 1px solid #5025d1;
+  box-shadow: 0 0 4px #673de6;
+}
+.toolsWraper p {
+  line-height: 24px;
+}
+.toolsWraper .image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.toolsWraper img {
+  width: 350px;
+  height: 200px;
+  border-radius: 4px;
+}
+
+.aiWraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2f1c6a;
+  color: white;
+  padding: 40px 0 40px 0;
+  margin-top: 80px;
+}
+.aiWraper p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0 10px;
+}
+.aiWraper button {
+  all: unset;
+  background-color: rgb(103, 61, 230);
+  color: white;
+  width: 260px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  padding: 16px 0 16px;
+  cursor: pointer;
+  background-color: #fc5185;
+  margin: 15px 0 20px;
+}
+.aiWraper img {
+  width: 500px;
+  height: 350px;
 }/*# sourceMappingURL=index.css.map */
