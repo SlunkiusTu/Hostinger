@@ -292,11 +292,27 @@ body {
 }
 
 .conditions {
-  color: #673de6;
+  color: rgb(103, 61, 230);
   font-weight: 700;
   cursor: pointer;
   text-align: center;
   margin-top: 40px;
+}
+
+.closeContainer {
+  @include flexCenter();
+  .close {
+    all: unset;
+    text-align: center;
+    cursor: pointer;
+    color: #673de6;
+    font-weight: 700;
+    padding: 10px 0 10px;
+    width: 68%;
+    border-bottom: 1px solid #d5dfff;
+    border-left: 1px solid #d5dfff;
+    border-right: 1px solid #d5dfff;
+  }
 }
 
 .toolsWraper {
@@ -324,6 +340,7 @@ body {
     border-radius: 4px;
     padding: 13px 16px;
     margin-bottom: 25px;
+    font-size: 16px;
     cursor: pointer;
     &:hover {
       border: none;
