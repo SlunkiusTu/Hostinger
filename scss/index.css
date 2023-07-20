@@ -52,7 +52,7 @@ body {
   font-size: 20px;
 }
 .mainWraper .free {
-  color: #2f1c6a;
+  color: #673de6;
   font-weight: 800;
   font-size: 18px;
   margin: 0;
@@ -159,4 +159,109 @@ body {
   max-width: 70%;
   text-align: center;
   font-weight: 500;
+}
+
+.discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+.discount .discountContent {
+  border: 1px solid #d5dfff;
+  border-radius: 4px;
+  min-width: 470px;
+  padding: 10px 20px 20px 20px;
+}
+.discount h3 {
+  text-align: center;
+  color: #2f1c6a;
+  margin-top: 20px;
+}
+.discount .savings .bestDeal {
+  text-align: center;
+}
+.discount .savings .bestDeal .euroLine {
+  color: #727586;
+  text-decoration-line: line-through;
+  font-size: 14px;
+}
+.discount .savings .bestDeal .save {
+  background-color: #ebe4ff;
+  color: #5025d1;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 4px;
+}
+.discount .savings .bestDeal .price {
+  color: #2f1c6a;
+  padding-top: 16px;
+}
+.discount .savings .bestDeal .price .numbers {
+  font-size: 36px;
+  font-weight: 700;
+}
+.discount .savings .bestDeal .price .euro {
+  font-size: 20px;
+}
+.discount .savings .bestDeal .pvm {
+  color: #2f1c6a;
+  font-size: 14px;
+  font-weight: 500;
+}
+.discount .savings .bestDeal .free {
+  color: #673de6;
+  font-weight: 800;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 26px;
+}
+.discount .savings .bestDeal button {
+  all: unset;
+  background-color: rgb(103, 61, 230);
+  color: white;
+  width: 300px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  padding: 16px 0 16px;
+  cursor: pointer;
+}
+.discount .savings .bestDeal .pricePlan {
+  margin: 16px 0 26px 0;
+}
+.discount .savings .bestDeal .pricePlan span {
+  color: #727586;
+  font-size: 14px;
+  margin-top: 16px;
+}
+.discount .savings .special {
+  display: flex;
+  flex-direction: column;
+  color: #2f1c6a;
+}
+.discount .savings .special div {
+  display: flex;
+  align-items: center;
+  height: 36px;
+}
+.discount .savings .special p {
+  font-size: 14px;
+  display: flex;
+  gap: 5px;
+}
+.discount .savings .special .questionMark {
+  display: flex;
+  justify-content: space-between;
+}
+
+.conditions {
+  color: #673de6;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 40px;
 }/*# sourceMappingURL=index.css.map */
