@@ -71,6 +71,12 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.mainWraper .mainContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .mainWraper h1 {
   color: #2f1c6a;
   font-size: 24px;
@@ -436,8 +442,87 @@ body {
   .headerWraper header svg {
     display: none;
   }
+  .headerWraper .mainWraper h1 {
+    color: #2f1c6a;
+    font-size: 24px;
+    font-weight: 800;
+    max-width: 65%;
+    text-align: center;
+    margin: 0;
+  }
+  .headerWraper .mainWraper .describe {
+    color: #2f1c6a;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    max-width: 68%;
+    text-align: center;
+  }
+  .headerWraper .mainWraper .price {
+    color: #2f1c6a;
+    padding-bottom: 16px;
+  }
+  .headerWraper .mainWraper .price .numbers {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .headerWraper .mainWraper .price .euro {
+    font-size: 20px;
+  }
+  .headerWraper .mainWraper .free {
+    color: #673de6;
+    font-weight: 800;
+    font-size: 18px;
+    margin: 0;
+  }
+  .headerWraper .mainWraper .time {
+    display: flex;
+    margin: 16px 0 24px 0;
+  }
+  .headerWraper .mainWraper .time div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2f1c6a;
+    height: 64px;
+    width: 64px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #2f1c6a;
+  }
+  .headerWraper .mainWraper .time span {
+    color: #2f1c6a;
+    margin: 16px 4px 0;
+    font-size: 18px;
+  }
+  .headerWraper .mainWraper button {
+    all: unset;
+    background-color: rgb(103, 61, 230);
+    color: white;
+    width: 260px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 700;
+    padding: 16px 0 16px;
+    cursor: pointer;
+    width: 300px;
+  }
+  .headerWraper .mainWraper .moneyBack {
+    color: #2f1c6a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  .headerWraper .mainWraper img {
+    width: 500px;
+    height: 300px;
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .headerWraper header {
     display: flex;
     justify-content: space-between;
@@ -450,6 +535,9 @@ body {
        object-fit: cover;
   }
   .headerWraper header .flag {
+    display: none;
+  }
+  .headerWraper header .none {
     display: none;
   }
   .headerWraper header .headerLogo {
@@ -568,5 +656,22 @@ body {
   .aiWraper img {
     width: 680px;
     height: 500px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .flag {
+    display: none;
+  }
+  header .none {
+    display: none;
+  }
+  header .headerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  header .headerLogo p {
+    display: none;
   }
 }/*# sourceMappingURL=index.css.map */
